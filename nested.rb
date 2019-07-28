@@ -81,7 +81,7 @@ end
 
 # additionKey, additionValue
 
-def adding_matz(programmer_hash, object)
+def adding_matz
 programmer_hash = 
 	  	{
         :grace_hopper => {
@@ -97,12 +97,12 @@ programmer_hash =
           :languages => ["C"]
         }
       }
-      object =  :yukihiro_matsumoto => {
+
+  programmer_hash[:yukihiro_matsumoto] = {
   :known_for => "Ruby",
   :languages => ["LISP", "C"]
 }
-
-    return programmer_hash[0] << object
+return programmer_hash
 end
   
 # add the following information to the top level of programmer_hash
